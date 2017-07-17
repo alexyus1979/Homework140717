@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Todo application</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+<body>
+
+<div class="container">
+    <form class="row">
+        <div class="col-md-5">
+            <input type="text" class="form-control" id="task" />
+        </div>
+        <div class="col-md-2">
+            <input type="button" class="btn" value="Add element" id="addTask" />
+        </div>
+        <div class="col-md-2">
+            <input type="button" class="btn btn-primary" value="Send data to server by ajax" id="sendByAjax" />
+        </div>
+        <div class="col-md-2">
+            <input type="button" class="btn btn-success" value="Send data to server by WebSockets"
+                   id="sendByWebSockets" />
+        </div>
+    </form>
+
+    <div id="taskContainer"></div>
+</div>
+
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/functions.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
